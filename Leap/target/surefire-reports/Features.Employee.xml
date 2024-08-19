@@ -1,0 +1,402 @@
+<testsuite failures="0" name="Features/Employee.feature" skipped="0" tests="7" time="11.527295">
+  <testcase classname="Features.Employee" name="Create a new employee - Positive" time="1.211574">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="Features.Employee" name="Create a new employee - Positive" time="1.053007">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[1] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="Features.Employee" name="Create a new employee - Invalid Data" time="1.040411">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[1] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[0] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed</system-out>
+  </testcase>
+  <testcase classname="Features.Employee" name="Create a new employee - Invalid Data" time="1.359756">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[1] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[0] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[1] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed</system-out>
+  </testcase>
+  <testcase classname="Features.Employee" name="Get and validate the newly created employee" time="2.410833">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[1] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[0] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[1] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+* def result = callonce read('classpath:Features/getEmployeeId.feature') .. passed
+* def employeeId = result.employeeId ...................................... passed
+* match employeeId != null ................................................ passed
+Given url baseUrl + employeeId ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def Emp = response ...................................................... passed
+* print 'Employee Found:', Emp ............................................ passed
+And match Emp._id == employeeId ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="Features.Employee" name="Update an employee" time="2.058786">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[1] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[0] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[1] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+* def result = callonce read('classpath:Features/getEmployeeId.feature') .. passed
+* def employeeId = result.employeeId ...................................... passed
+* match employeeId != null ................................................ passed
+Given url baseUrl + employeeId ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def Emp = response ...................................................... passed
+* print 'Employee Found:', Emp ............................................ passed
+And match Emp._id == employeeId ........................................... passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+* def result = callonce read('classpath:Features/getEmployeeId.feature') .. passed
+* def employeeId = result.employeeId ...................................... passed
+* match employeeId != null ................................................ passed
+Given url baseUrl + employeeId ............................................ passed
+And request data.updateData[0] ............................................ passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+* def partialResponse = response .......................................... passed
+* print 'Partial update response:', partialResponse ....................... passed
+Given url baseUrl + employeeId ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def updatedEmployee = response .......................................... passed
+* print 'Updated employee details:', updatedEmployee ...................... passed
+* print 'Full response:', response ........................................ passed
+And match response._id == employeeId ...................................... passed
+And match response contains data.updateData[0] ............................ passed
+* print data.updateData[0] ................................................ passed
+And match response contains {UpdatedFirstName:"Kumar",UpdatedLastName:"Varanasi",UpdatedJobTitle:"Senior Quality Engineer",UpdatedEmail:"kumar.varanasi@example.com",UpdatedBaseSalary:60000} . passed</system-out>
+  </testcase>
+  <testcase classname="Features.Employee" name="Delete an employee" time="2.392929">
+    <system-out>* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[0] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.validData[1] ............................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def employeeId = response._id ........................................... passed
+* karate.set('employeeId', employeeId)  // Store employeeId globally ...... passed
+* def createdEmployee = response .......................................... passed
+* print 'Created Employee ID:', employeeId ................................ passed
+* match employeeId != null ................................................ passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[0] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+Given url baseUrl ......................................................... passed
+And request data.invalidData[1] ........................................... passed
+When method POST .......................................................... passed
+And match responseStatus == 201 ........................................... passed
+* def statusCode = responseStatus ......................................... passed
+* print 'Status Code:', statusCode ........................................ passed
+* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.') . passed
+* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL') . passed
+* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data') . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+* def result = callonce read('classpath:Features/getEmployeeId.feature') .. passed
+* def employeeId = result.employeeId ...................................... passed
+* match employeeId != null ................................................ passed
+Given url baseUrl + employeeId ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def Emp = response ...................................................... passed
+* print 'Employee Found:', Emp ............................................ passed
+And match Emp._id == employeeId ........................................... passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+* def result = callonce read('classpath:Features/getEmployeeId.feature') .. passed
+* def employeeId = result.employeeId ...................................... passed
+* match employeeId != null ................................................ passed
+Given url baseUrl + employeeId ............................................ passed
+And request data.updateData[0] ............................................ passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+* def partialResponse = response .......................................... passed
+* print 'Partial update response:', partialResponse ....................... passed
+Given url baseUrl + employeeId ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def updatedEmployee = response .......................................... passed
+* print 'Updated employee details:', updatedEmployee ...................... passed
+* print 'Full response:', response ........................................ passed
+And match response._id == employeeId ...................................... passed
+And match response contains data.updateData[0] ............................ passed
+* print data.updateData[0] ................................................ passed
+And match response contains {UpdatedFirstName:"Kumar",UpdatedLastName:"Varanasi",UpdatedJobTitle:"Senior Quality Engineer",UpdatedEmail:"kumar.varanasi@example.com",UpdatedBaseSalary:60000} . passed
+* def baseUrl = karate.env ................................................ passed
+* url baseUrl ............................................................. passed
+* def data = read('classpath:Features/data.json') ......................... passed
+* configure headers = { 'Content-Type': 'application/json' } .............. passed
+* def result = callonce read('classpath:Features/getEmployeeId.feature') .. passed
+* def employeeId = result.employeeId ...................................... passed
+* match employeeId != null ................................................ passed
+Given url baseUrl + employeeId ............................................ passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+* print 'Deleted employee ID:', employeeId ................................ passed
+Given url baseUrl + employeeId ............................................ passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+* print 'Employee successfully deleted, no data found' .................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,70 @@
+{
+  "validData": [
+    {
+      "FirstName": "Sai",
+      "LastName": "Prasad",
+      "DateOfBirth": "1992-09-21",
+      "StartDate": "2023-08-01",
+      "Department": "QA",
+      "JobTitle": "Quality Engineer",
+      "Email": "sai.prasad@gmail.com",
+      "Mobile": "+91 9030713451",
+      "Address": "43 Emert St",
+      "BaseSalary": 50000
+    },
+    {
+      "FirstName": "Sri",
+      "LastName": "Valli",
+      "DateOfBirth": "1995-10-09",
+      "StartDate": "2023-09-21",
+      "Department": "DB",
+      "JobTitle": "DBA Admin",
+      "Email": "sri.valli@gmail.com",
+      "Mobile": "+91 9701452923",
+      "Address": "109 Centenaty St",
+      "BaseSalary": 55000
+    }
+  ],
+  "updateData": [
+    {
+      "UpdatedFirstName": "Kumar",
+      "UpdatedLastName": "Varanasi",
+      "UpdatedJobTitle": "Senior Quality Engineer",
+      "UpdatedEmail": "kumar.varanasi@example.com",
+      "UpdatedBaseSalary": 60000
+    },
+    {
+      "UpdatedFirstName": "Gayatri",
+      "UpdatedLastName": "KN",
+      "UpdatedJobTitle": "Senior DBA Admin",
+      "UpdatedEmail": "gayatri.kn@example.com",
+      "UpdatedBaseSalary": 65000
+    }
+  ],
+  "invalidData": [
+    {
+      "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+      "LastName": "Prasad",
+      "DateOfBirth": "1992-09-21",
+      "StartDate": "2023-08-01",
+      "Department": "QA",
+      "JobTitle": "Quality Engineer",
+      "Email": "sai.prasad@gmailcom",
+      "Mobile": "+91 9030713451",
+      "Address": "43 Emert St",
+      "BaseSalary": "50000"
+    },
+    {
+      "FirstName": "",
+      "LastName": 123@23#$,
+      "DateOfBirth": "199510-09",
+      "StartDate": "2023-09-21",
+      "Department": "DB",
+      "JobTitle": "DBA Admin",
+      "Email": "sri.valli@#%@%#$com",
+      "Mobile": "ssj9701452923",
+      "Address": "109 Centenaty St",
+      "BaseSalary": "aasa"
+    }
+  ]
+}

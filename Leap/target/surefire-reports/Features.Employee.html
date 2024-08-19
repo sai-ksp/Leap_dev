@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>Features.Employee</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">7</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2024-08-18 11:26:37 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1.1:22]">[1.1:22] Create a new employee - Positive </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[1.2:23]">[1.2:23] Create a new employee - Positive </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2.1:48]">[2.1:48] Create a new employee - Invalid Data </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2.2:49]">[2.2:49] Create a new employee - Invalid Data </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3:51]">[3:51] Get and validate the newly created employee </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[4:64]">[4:64] Update an employee </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[5:96]">[5:96] Delete an employee </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">Features/Employee.feature</span><span class="feature-description">Operations on Employee using Karate Framework</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:22]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:22]</span><span class="scenario-name">Create a new employee - Positive </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1212</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:22]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:22]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">23:26:25.998 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1.1:22]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:22]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">38</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:22]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">Given url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">And request data.validData[0]</div>
+                        </div>
+                        <div class="time-cell passed">17</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1125</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">23:26:26.158 request:
+1 &gt; POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 239
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}
+
+23:26:27.204 response time in milliseconds: 1044.41
+1 &lt; 201
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 18 Aug 2024 13:26:27 GMT
+1 &lt; Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6836b920b03e879f63b
+1 &lt; Server: nginx/1.14.2
+1 &lt; Transfer-Encoding: chunked
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000,"_id":"66c1f6836b920b03e879f63b"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">* def employeeId = response._id</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">* karate.set('employeeId', employeeId)  // Store employeeId globally</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">* def createdEmployee = response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* print 'Created Employee ID:', employeeId</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">23:26:27.222 [print] Created Employee ID: 66c1f6836b920b03e879f63b</div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">* match employeeId != null</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.2:23]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [1.2:23]</span><span class="scenario-name">Create a new employee - Positive </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1053</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.2:23]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.2:23]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">23:26:27.238 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1.2:23]bg">
+                        <div class="step-container" id="15">
+                            <div class="step-ref bg-step">15</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.2:23]bg">
+                        <div class="step-container" id="16">
+                            <div class="step-ref bg-step">16</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.2:23]bg">
+                        <div class="step-container" id="17">
+                            <div class="step-ref bg-step">17</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">Given url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">And request data.validData[1]</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1038</div>
+                    </div>
+                    <div class="preformatted" data-parent="20">23:26:27.257 request:
+1 &gt; POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 235
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000}
+
+23:26:28.293 response time in milliseconds: 1035.14
+1 &lt; 201
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 18 Aug 2024 13:26:28 GMT
+1 &lt; Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6846b920b03e879f63c
+1 &lt; Server: nginx/1.14.2
+1 &lt; Transfer-Encoding: chunked
+{"FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000,"_id":"66c1f6846b920b03e879f63c"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-cell passed">* def employeeId = response._id</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">* karate.set('employeeId', employeeId)  // Store employeeId globally</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">* def createdEmployee = response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">* print 'Created Employee ID:', employeeId</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="25">23:26:28.297 [print] Created Employee ID: 66c1f6846b920b03e879f63c</div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">* match employeeId != null</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2.1:48]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [2.1:48]</span><span class="scenario-name">Create a new employee - Invalid Data </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1040</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2.1:48]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2.1:48]bg">
+                        <div class="step-container" id="27">
+                            <div class="step-ref bg-step">27</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="27">23:26:28.302 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[2.1:48]bg">
+                        <div class="step-container" id="28">
+                            <div class="step-ref bg-step">28</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2.1:48]bg">
+                        <div class="step-container" id="29">
+                            <div class="step-ref bg-step">29</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[2.1:48]bg">
+                        <div class="step-container" id="30">
+                            <div class="step-ref bg-step">30</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">Given url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">And request data.invalidData[0]</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1018</div>
+                    </div>
+                    <div class="preformatted" data-parent="33">23:26:28.312 request:
+1 &gt; POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 295
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000"}
+
+23:26:29.328 response time in milliseconds: 1015.75
+1 &lt; 201
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 18 Aug 2024 13:26:29 GMT
+1 &lt; Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6856b920b03e879f63d
+1 &lt; Server: nginx/1.14.2
+1 &lt; Transfer-Encoding: chunked
+{"FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000","_id":"66c1f6856b920b03e879f63d"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">And match responseStatus == 201</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">* def statusCode = responseStatus</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-cell passed">* print 'Status Code:', statusCode</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="36">23:26:29.332 [print] Status Code: 201</div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-cell passed">* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.')</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">23:26:29.339 BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.</div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-cell passed">* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL')</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref passed">39</div>
+                            <div class="step-cell passed">* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data')</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2.2:49]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario Outline: [2.2:49]</span><span class="scenario-name">Create a new employee - Invalid Data </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1360</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2.2:49]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2.2:49]bg">
+                        <div class="step-container" id="40">
+                            <div class="step-ref bg-step">40</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="40">23:26:29.355 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[2.2:49]bg">
+                        <div class="step-container" id="41">
+                            <div class="step-ref bg-step">41</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2.2:49]bg">
+                        <div class="step-container" id="42">
+                            <div class="step-ref bg-step">42</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row" data-parent="[2.2:49]bg">
+                        <div class="step-container" id="43">
+                            <div class="step-ref bg-step">43</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44">
+                            <div class="step-ref passed">44</div>
+                            <div class="step-cell passed">Given url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="45">
+                            <div class="step-ref passed">45</div>
+                            <div class="step-cell passed">And request data.invalidData[1]</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref passed">46</div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1351</div>
+                    </div>
+                    <div class="preformatted" data-parent="46">23:26:29.366 request:
+1 &gt; POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 234
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"","LastName":"123@23#$","DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"ssj9701452923","Address":"109 Centenaty St","BaseSalary":"aasa"}
+
+23:26:30.715 response time in milliseconds: 1348.21
+1 &lt; 201
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 18 Aug 2024 13:26:30 GMT
+1 &lt; Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6866b920b03e879f63e
+1 &lt; Server: nginx/1.14.2
+1 &lt; Transfer-Encoding: chunked
+{"FirstName":"","LastName":"123@23#$","DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"ssj9701452923","Address":"109 Centenaty St","BaseSalary":"aasa","_id":"66c1f6866b920b03e879f63e"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref passed">47</div>
+                            <div class="step-cell passed">And match responseStatus == 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="48">
+                            <div class="step-ref passed">48</div>
+                            <div class="step-cell passed">* def statusCode = responseStatus</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="49">
+                            <div class="step-ref passed">49</div>
+                            <div class="step-cell passed">* print 'Status Code:', statusCode</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="49">23:26:30.716 [print] Status Code: 201</div>
+                    <div class="step-row">
+                        <div class="step-container" id="50">
+                            <div class="step-ref passed">50</div>
+                            <div class="step-cell passed">* if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="50">23:26:30.717 BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.</div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref passed">51</div>
+                            <div class="step-cell passed">* if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL')</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="52">
+                            <div class="step-ref passed">52</div>
+                            <div class="step-cell passed">* if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data')</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3:51]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [3:51]</span><span class="scenario-name">Get and validate the newly created employee </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2411</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3:51]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:51]bg">
+                        <div class="step-container" id="53">
+                            <div class="step-ref bg-step">53</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="53">23:26:30.723 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[3:51]bg">
+                        <div class="step-container" id="54">
+                            <div class="step-ref bg-step">54</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:51]bg">
+                        <div class="step-container" id="55">
+                            <div class="step-ref bg-step">55</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:51]bg">
+                        <div class="step-container" id="56">
+                            <div class="step-ref bg-step">56</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="57">
+                            <div class="step-ref passed">57</div>
+                            <div class="step-cell passed">* def result = callonce read('classpath:Features/getEmployeeId.feature')</div>
+                        </div>
+                        <div class="time-cell passed">1037</div>
+                    </div>
+                    <div class="preformatted" data-parent="57">23:26:31.766 &lt;&lt; lock released, cached callonce: read('classpath:Features/getEmployeeId.feature')</div>
+                    <div class="step-row">
+                        <div class="step-container" id="57.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">Features/getEmployeeId.feature</div>
+                        </div>
+                        <div class="time-cell passed">1025</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="58">
+                            <div class="step-ref passed">58</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="58">23:26:30.734 &gt;&gt; lock acquired, begin callonce: read('classpath:Features/getEmployeeId.feature')</div>
+                    <div class="step-row">
+                        <div class="step-container" id="59">
+                            <div class="step-ref passed">59</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="60">
+                            <div class="step-ref passed">60</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="61">
+                            <div class="step-ref passed">61</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="62">
+                            <div class="step-ref passed">62</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="63">
+                            <div class="step-ref passed">63</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request data.validData[0]</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="64">
+                            <div class="step-ref passed">64</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1005</div>
+                    </div>
+                    <div class="preformatted" data-parent="64">23:26:30.746 request:
+1 &gt; POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 239
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}
+
+23:26:31.749 response time in milliseconds: 1002.92
+1 &lt; 201
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 18 Aug 2024 13:26:31 GMT
+1 &lt; Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 &lt; Server: nginx/1.14.2
+1 &lt; Transfer-Encoding: chunked
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000,"_id":"66c1f6876b920b03e879f63f"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="65">
+                            <div class="step-ref passed">65</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="66">
+                            <div class="step-ref passed">66</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def employeeId = response._id</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="67">
+                            <div class="step-ref passed">67</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* karate.set('employeeId', employeeId)</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="68">
+                            <div class="step-ref passed">68</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def result = { employeeId: employeeId }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="69">
+                            <div class="step-ref passed">69</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* karate.signal(result)</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="70">
+                            <div class="step-ref passed">70</div>
+                            <div class="step-cell passed">* def employeeId = result.employeeId</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="71">
+                            <div class="step-ref passed">71</div>
+                            <div class="step-cell passed">* match employeeId != null</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="72">
+                            <div class="step-ref passed">72</div>
+                            <div class="step-cell passed">Given url baseUrl + employeeId</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="73">
+                            <div class="step-ref passed">73</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1358</div>
+                    </div>
+                    <div class="preformatted" data-parent="73">23:26:31.778 request:
+1 &gt; GET https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:33.133 response time in milliseconds: 1355.18
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 18 Aug 2024 13:26:32 GMT
+1 &lt; Server: nginx/1.14.2
+1 &lt; Transfer-Encoding: chunked
+{"_id":"66c1f6876b920b03e879f63f","FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="74">
+                            <div class="step-ref passed">74</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="75">
+                            <div class="step-ref passed">75</div>
+                            <div class="step-cell passed">* def Emp = response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="76">
+                            <div class="step-ref passed">76</div>
+                            <div class="step-cell passed">* print 'Employee Found:', Emp</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="76">23:26:33.136 [print] Employee Found: {
+  "DateOfBirth": "1992-09-21",
+  "StartDate": "2023-08-01",
+  "Department": "QA",
+  "Email": "sai.prasad@gmail.com",
+  "Address": "43 Emert St",
+  "FirstName": "Sai",
+  "_id": "66c1f6876b920b03e879f63f",
+  "LastName": "Prasad",
+  "JobTitle": "Quality Engineer",
+  "Mobile": "+91 9030713451",
+  "BaseSalary": 50000
+}</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Assertions to validate the data only with</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="77">
+                            <div class="step-ref passed">77</div>
+                            <div class="step-cell passed">And match Emp._id == employeeId</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[4:64]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [4:64]</span><span class="scenario-name">Update an employee </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2059</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[4:64]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[4:64]bg">
+                        <div class="step-container" id="78">
+                            <div class="step-ref bg-step">78</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="78">23:26:33.145 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[4:64]bg">
+                        <div class="step-container" id="79">
+                            <div class="step-ref bg-step">79</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:64]bg">
+                        <div class="step-container" id="80">
+                            <div class="step-ref bg-step">80</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:64]bg">
+                        <div class="step-container" id="81">
+                            <div class="step-ref bg-step">81</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="82">
+                            <div class="step-ref passed">82</div>
+                            <div class="step-cell passed">* def result = callonce read('classpath:Features/getEmployeeId.feature')</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="83">
+                            <div class="step-ref passed">83</div>
+                            <div class="step-cell passed">* def employeeId = result.employeeId</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="84">
+                            <div class="step-ref passed">84</div>
+                            <div class="step-cell passed">* match employeeId != null</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="85">
+                            <div class="step-ref passed">85</div>
+                            <div class="step-cell passed">Given url baseUrl + employeeId</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="86">
+                            <div class="step-ref passed">86</div>
+                            <div class="step-cell passed">And request data.updateData[0]</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="87">
+                            <div class="step-ref passed">87</div>
+                            <div class="step-cell passed">When method PUT</div>
+                        </div>
+                        <div class="time-cell passed">1012</div>
+                    </div>
+                    <div class="preformatted" data-parent="87">23:26:33.163 request:
+1 &gt; PUT https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 171
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"UpdatedFirstName":"Kumar","UpdatedLastName":"Varanasi","UpdatedJobTitle":"Senior Quality Engineer","UpdatedEmail":"kumar.varanasi@example.com","UpdatedBaseSalary":60000}
+
+23:26:34.173 response time in milliseconds: 1009.12
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 18 Aug 2024 13:26:34 GMT
+1 &lt; Server: nginx/1.14.2</div>
+                    <div class="step-row">
+                        <div class="step-container" id="88">
+                            <div class="step-ref passed">88</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="89">
+                            <div class="step-ref passed">89</div>
+                            <div class="step-cell passed">* def partialResponse = response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="90">
+                            <div class="step-ref passed">90</div>
+                            <div class="step-cell passed">* print 'Partial update response:', partialResponse</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="90">23:26:34.176 [print] Partial update response:</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Validate that the employee has been updated</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="91">
+                            <div class="step-ref passed">91</div>
+                            <div class="step-cell passed">Given url baseUrl + employeeId</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="92">
+                            <div class="step-ref passed">92</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1026</div>
+                    </div>
+                    <div class="preformatted" data-parent="92">23:26:34.179 request:
+2 &gt; GET https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Type: application/json
+2 &gt; Host: crudcrud.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:35.202 response time in milliseconds: 1023.32
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+2 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Sun, 18 Aug 2024 13:26:35 GMT
+2 &lt; Server: nginx/1.14.2
+2 &lt; Transfer-Encoding: chunked
+{"_id":"66c1f6876b920b03e879f63f","UpdatedFirstName":"Kumar","UpdatedLastName":"Varanasi","UpdatedJobTitle":"Senior Quality Engineer","UpdatedEmail":"kumar.varanasi@example.com","UpdatedBaseSalary":60000}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="93">
+                            <div class="step-ref passed">93</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="94">
+                            <div class="step-ref passed">94</div>
+                            <div class="step-cell passed">* def updatedEmployee = response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="95">
+                            <div class="step-ref passed">95</div>
+                            <div class="step-cell passed">* print 'Updated employee details:', updatedEmployee</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="95">23:26:35.204 [print] Updated employee details: {
+  "UpdatedBaseSalary": 60000,
+  "_id": "66c1f6876b920b03e879f63f",
+  "UpdatedJobTitle": "Senior Quality Engineer",
+  "UpdatedEmail": "kumar.varanasi@example.com",
+  "UpdatedFirstName": "Kumar",
+  "UpdatedLastName": "Varanasi"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Debug: Print the actual response structure</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="96">
+                            <div class="step-ref passed">96</div>
+                            <div class="step-cell passed">* print 'Full response:', response</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="96">23:26:35.205 [print] Full response: {
+  "UpdatedBaseSalary": 60000,
+  "_id": "66c1f6876b920b03e879f63f",
+  "UpdatedJobTitle": "Senior Quality Engineer",
+  "UpdatedEmail": "kumar.varanasi@example.com",
+  "UpdatedFirstName": "Kumar",
+  "UpdatedLastName": "Varanasi"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Full validation (Ensure these fields exist in the response)</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="97">
+                            <div class="step-ref passed">97</div>
+                            <div class="step-cell passed">And match response._id == employeeId</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Implicitly matching response data to the updated data</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="98">
+                            <div class="step-ref passed">98</div>
+                            <div class="step-cell passed">And match response contains data.updateData[0]</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="99">
+                            <div class="step-ref passed">99</div>
+                            <div class="step-cell passed">* print data.updateData[0]</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="99">23:26:35.207 [print] {
+  "UpdatedFirstName": "Kumar",
+  "UpdatedLastName": "Varanasi",
+  "UpdatedJobTitle": "Senior Quality Engineer",
+  "UpdatedEmail": "kumar.varanasi@example.com",
+  "UpdatedBaseSalary": 60000
+}</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Explicitly  matching response data to the updated data</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="100">
+                            <div class="step-ref passed">100</div>
+                            <div class="step-cell passed">And match response contains {UpdatedFirstName:"Kumar",UpdatedLastName:"Varanasi",UpdatedJobTitle:"Senior Quality Engineer",UpdatedEmail:"kumar.varanasi@example.com",UpdatedBaseSalary:60000}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[5:96]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [5:96]</span><span class="scenario-name">Delete an employee </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2393</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[5:96]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[5:96]bg">
+                        <div class="step-container" id="101">
+                            <div class="step-ref bg-step">101</div>
+                            <div class="step-cell passed">* def baseUrl = karate.env</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="101">23:26:35.213 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[5:96]bg">
+                        <div class="step-container" id="102">
+                            <div class="step-ref bg-step">102</div>
+                            <div class="step-cell passed">* url baseUrl</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[5:96]bg">
+                        <div class="step-container" id="103">
+                            <div class="step-ref bg-step">103</div>
+                            <div class="step-cell passed">* def data = read('classpath:Features/data.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[5:96]bg">
+                        <div class="step-container" id="104">
+                            <div class="step-ref bg-step">104</div>
+                            <div class="step-cell passed">* configure headers = { 'Content-Type': 'application/json' }</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="105">
+                            <div class="step-ref passed">105</div>
+                            <div class="step-cell passed">* def result = callonce read('classpath:Features/getEmployeeId.feature')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="106">
+                            <div class="step-ref passed">106</div>
+                            <div class="step-cell passed">* def employeeId = result.employeeId</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="107">
+                            <div class="step-ref passed">107</div>
+                            <div class="step-cell passed">* match employeeId != null</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="108">
+                            <div class="step-ref passed">108</div>
+                            <div class="step-cell passed">Given url baseUrl + employeeId</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="109">
+                            <div class="step-ref passed">109</div>
+                            <div class="step-cell passed">When method DELETE</div>
+                        </div>
+                        <div class="time-cell passed">1363</div>
+                    </div>
+                    <div class="preformatted" data-parent="109">23:26:35.222 request:
+1 &gt; DELETE https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: crudcrud.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:36.585 response time in milliseconds: 1361.44
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Length,Content-Range
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 18 Aug 2024 13:26:36 GMT
+1 &lt; Server: nginx/1.14.2</div>
+                    <div class="step-row">
+                        <div class="step-container" id="110">
+                            <div class="step-ref passed">110</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="111">
+                            <div class="step-ref passed">111</div>
+                            <div class="step-cell passed">* print 'Deleted employee ID:', employeeId</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="111">23:26:36.588 [print] Deleted employee ID: 66c1f6876b920b03e879f63f</div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># Validate that the employee has been deleted</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="112">
+                            <div class="step-ref passed">112</div>
+                            <div class="step-cell passed">Given url baseUrl + employeeId</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="113">
+                            <div class="step-ref passed">113</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1015</div>
+                    </div>
+                    <div class="preformatted" data-parent="113">23:26:36.591 request:
+2 &gt; GET https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Type: application/json
+2 &gt; Host: crudcrud.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:37.603 response time in milliseconds: 1011.51
+2 &lt; 404
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/problem+json; charset=utf-8
+2 &lt; Date: Sun, 18 Aug 2024 13:26:37 GMT
+2 &lt; Server: nginx/1.14.2
+2 &lt; Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"0HN5GE3VBM7CK:00000001"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="114">
+                            <div class="step-ref passed">114</div>
+                            <div class="step-cell passed">Then status 404</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="115">
+                            <div class="step-ref passed">115</div>
+                            <div class="step-cell passed">* print 'Employee successfully deleted, no data found'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="preformatted" data-parent="115">23:26:37.609 [print] Employee successfully deleted, no data found</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

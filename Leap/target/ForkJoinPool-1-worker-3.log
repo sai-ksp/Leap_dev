@@ -1,0 +1,1306 @@
+23:26:25.998 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:26.158 request:
+1 > POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 239
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}
+
+23:26:27.204 response time in milliseconds: 1044.41
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 13:26:27 GMT
+1 < Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6836b920b03e879f63b
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000,"_id":"66c1f6836b920b03e879f63b"}
+
+23:26:27.222 [print] Created Employee ID: 66c1f6836b920b03e879f63b
+23:26:27.238 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:27.257 request:
+1 > POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 235
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000}
+
+23:26:28.293 response time in milliseconds: 1035.14
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 13:26:28 GMT
+1 < Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6846b920b03e879f63c
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000,"_id":"66c1f6846b920b03e879f63c"}
+
+23:26:28.297 [print] Created Employee ID: 66c1f6846b920b03e879f63c
+23:26:28.302 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:28.312 request:
+1 > POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 295
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000"}
+
+23:26:29.328 response time in milliseconds: 1015.75
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 13:26:29 GMT
+1 < Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6856b920b03e879f63d
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000","_id":"66c1f6856b920b03e879f63d"}
+
+23:26:29.332 [print] Status Code: 201
+23:26:29.339 BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior. 
+23:26:29.355 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:29.366 request:
+1 > POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 234
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"","LastName":"123@23#$","DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"ssj9701452923","Address":"109 Centenaty St","BaseSalary":"aasa"}
+
+23:26:30.715 response time in milliseconds: 1348.21
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 13:26:30 GMT
+1 < Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6866b920b03e879f63e
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"","LastName":"123@23#$","DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"ssj9701452923","Address":"109 Centenaty St","BaseSalary":"aasa","_id":"66c1f6866b920b03e879f63e"}
+
+23:26:30.716 [print] Status Code: 201
+23:26:30.717 BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior. 
+23:26:30.723 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:30.734 >> lock acquired, begin callonce: read('classpath:Features/getEmployeeId.feature')
+23:26:30.746 request:
+1 > POST https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 239
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}
+
+23:26:31.749 response time in milliseconds: 1002.92
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 13:26:31 GMT
+1 < Location: /api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000,"_id":"66c1f6876b920b03e879f63f"}
+
+23:26:31.766 << lock released, cached callonce: read('classpath:Features/getEmployeeId.feature')
+23:26:31.778 request:
+1 > GET https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:33.133 response time in milliseconds: 1355.18
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 13:26:32 GMT
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"_id":"66c1f6876b920b03e879f63f","FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}
+
+23:26:33.136 [print] Employee Found: {
+  "DateOfBirth": "1992-09-21",
+  "StartDate": "2023-08-01",
+  "Department": "QA",
+  "Email": "sai.prasad@gmail.com",
+  "Address": "43 Emert St",
+  "FirstName": "Sai",
+  "_id": "66c1f6876b920b03e879f63f",
+  "LastName": "Prasad",
+  "JobTitle": "Quality Engineer",
+  "Mobile": "+91 9030713451",
+  "BaseSalary": 50000
+}
+
+23:26:33.145 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:33.163 request:
+1 > PUT https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 171
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"UpdatedFirstName":"Kumar","UpdatedLastName":"Varanasi","UpdatedJobTitle":"Senior Quality Engineer","UpdatedEmail":"kumar.varanasi@example.com","UpdatedBaseSalary":60000}
+
+23:26:34.173 response time in milliseconds: 1009.12
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 18 Aug 2024 13:26:34 GMT
+1 < Server: nginx/1.14.2
+
+23:26:34.176 [print] Partial update response: 
+23:26:34.179 request:
+2 > GET https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json
+2 > Host: crudcrud.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:35.202 response time in milliseconds: 1023.32
+2 < 200
+2 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+2 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Expose-Headers: Content-Length,Content-Range
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Sun, 18 Aug 2024 13:26:35 GMT
+2 < Server: nginx/1.14.2
+2 < Transfer-Encoding: chunked
+{"_id":"66c1f6876b920b03e879f63f","UpdatedFirstName":"Kumar","UpdatedLastName":"Varanasi","UpdatedJobTitle":"Senior Quality Engineer","UpdatedEmail":"kumar.varanasi@example.com","UpdatedBaseSalary":60000}
+
+23:26:35.204 [print] Updated employee details: {
+  "UpdatedBaseSalary": 60000,
+  "_id": "66c1f6876b920b03e879f63f",
+  "UpdatedJobTitle": "Senior Quality Engineer",
+  "UpdatedEmail": "kumar.varanasi@example.com",
+  "UpdatedFirstName": "Kumar",
+  "UpdatedLastName": "Varanasi"
+}
+
+23:26:35.205 [print] Full response: {
+  "UpdatedBaseSalary": 60000,
+  "_id": "66c1f6876b920b03e879f63f",
+  "UpdatedJobTitle": "Senior Quality Engineer",
+  "UpdatedEmail": "kumar.varanasi@example.com",
+  "UpdatedFirstName": "Kumar",
+  "UpdatedLastName": "Varanasi"
+}
+
+23:26:35.207 [print] {
+  "UpdatedFirstName": "Kumar",
+  "UpdatedLastName": "Varanasi",
+  "UpdatedJobTitle": "Senior Quality Engineer",
+  "UpdatedEmail": "kumar.varanasi@example.com",
+  "UpdatedBaseSalary": 60000
+}
+
+23:26:35.213 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:26:35.222 request:
+1 > DELETE https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:36.585 response time in milliseconds: 1361.44
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 18 Aug 2024 13:26:36 GMT
+1 < Server: nginx/1.14.2
+
+23:26:36.588 [print] Deleted employee ID: 66c1f6876b920b03e879f63f
+23:26:36.591 request:
+2 > GET https://crudcrud.com/api/0b96868dc39c491f9114f9bd20490ecf/employees/66c1f6876b920b03e879f63f
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json
+2 > Host: crudcrud.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+23:26:37.603 response time in milliseconds: 1011.51
+2 < 404
+2 < Connection: keep-alive
+2 < Content-Type: application/problem+json; charset=utf-8
+2 < Date: Sun, 18 Aug 2024 13:26:37 GMT
+2 < Server: nginx/1.14.2
+2 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"0HN5GE3VBM7CK:00000001"}
+
+23:26:37.609 [print] Employee successfully deleted, no data found
+ 1602.93
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 18 Aug 2024 12:36:09 GMT
+1 < Server: nginx/1.14.2
+
+22:36:10.213 [print] Deleted employee ID: 66c1eab46b920b03e879f619
+22:36:10.215 request:
+2 > GET https://crudcrud.com/api/c98e97f28afa464985bb49e278bd8f62/employees/66c1eab46b920b03e879f619
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json
+2 > Host: crudcrud.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+22:36:11.329 response time in milliseconds: 1112.56
+2 < 404
+2 < Connection: keep-alive
+2 < Content-Type: application/problem+json; charset=utf-8
+2 < Date: Sun, 18 Aug 2024 12:36:11 GMT
+2 < Server: nginx/1.14.2
+2 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"0HN5GE3VBM741:00000001"}
+
+22:36:11.338 [print] Employee successfully deleted, no data found
+tExceedsTheCharacterLimit","LastName":"Prasad","_id":"66c1c12f6b920b03e879f592","JobTitle":"Quality Engineer","Mobile":"+91 9030713451","BaseSalary":"50000"}
+[2.2:37] getEmployeeId.feature:30 - status code was: 201, expected: 400, response time: 1212, url: https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/, response: {"DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","Email":"sri.valli@#%@%#$com","Address":"109 Centenaty St","FirstName":"","LastName":"123@23#$","_id":"66c1c1306b920b03e879f593","JobTitle":"DBA Admin","Mobile":"ssj9701452923","BaseSalary":"aasa"}
+19:38:57.548 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:38:57.559 >> lock acquired, begin callonce: read('classpath:Features/getEmployeeId.feature')
+19:38:57.576 request:
+1 > POST https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 239
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000}
+
+19:39:08.289 response time in milliseconds: 10711.77
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 09:39:07 GMT
+1 < Location: /api/6dbb0510830348af9eb50f42b24e46a0/employees/66c1c13b6b920b03e879f594
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000,"_id":"66c1c13b6b920b03e879f594"}
+
+19:39:08.295 [print] Created Employee ID: 66c1c13b6b920b03e879f594
+19:39:08.302 request:
+1 > POST https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 235
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000}
+
+19:39:09.415 response time in milliseconds: 1112.11
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 09:39:08 GMT
+1 < Location: /api/6dbb0510830348af9eb50f42b24e46a0/employees/66c1c13c6b920b03e879f595
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000,"_id":"66c1c13c6b920b03e879f595"}
+
+19:39:09.420 [print] Created Employee ID: 66c1c13c6b920b03e879f595
+19:39:09.428 request:
+1 > POST https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 295
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000"}
+
+19:39:10.541 response time in milliseconds: 1112.03
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 09:39:09 GMT
+1 < Location: /api/6dbb0510830348af9eb50f42b24e46a0/employees/66c1c13d6b920b03e879f596
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000","_id":"66c1c13d6b920b03e879f596"}
+
+19:39:10.542 status code was: 201, expected: 400, response time: 1112, url: https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/, response: {"DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","Email":"sai.prasad@gmailcom","Address":"43 Emert St","FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","_id":"66c1c13d6b920b03e879f596","JobTitle":"Quality Engineer","Mobile":"+91 9030713451","BaseSalary":"50000"}
+19:39:10.562 request:
+1 > POST https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 234
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"FirstName":"","LastName":"123@23#$","DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"ssj9701452923","Address":"109 Centenaty St","BaseSalary":"aasa"}
+
+19:39:12.021 response time in milliseconds: 1457.89
+1 < 201
+1 < Access-Control-Allow-Headers: DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+1 < Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Length,Content-Range
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 18 Aug 2024 09:39:10 GMT
+1 < Location: /api/6dbb0510830348af9eb50f42b24e46a0/employees/66c1c13e6b920b03e879f597
+1 < Server: nginx/1.14.2
+1 < Transfer-Encoding: chunked
+{"FirstName":"","LastName":"123@23#$","DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"ssj9701452923","Address":"109 Centenaty St","BaseSalary":"aasa","_id":"66c1c13e6b920b03e879f597"}
+
+19:39:12.022 status code was: 201, expected: 400, response time: 1458, url: https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/, response: {"DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","Email":"sri.valli@#%@%#$com","Address":"109 Centenaty St","FirstName":"","LastName":"123@23#$","_id":"66c1c13e6b920b03e879f597","JobTitle":"DBA Admin","Mobile":"ssj9701452923","BaseSalary":"aasa"}
+19:39:12.023 feature call failed: classpath:Features/getEmployeeId.feature
+arg: null
+[2.1:36] getEmployeeId.feature:30 - status code was: 201, expected: 400, response time: 1112, url: https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/, response: {"DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","Email":"sai.prasad@gmailcom","Address":"43 Emert St","FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","_id":"66c1c13d6b920b03e879f596","JobTitle":"Quality Engineer","Mobile":"+91 9030713451","BaseSalary":"50000"}
+[2.2:37] getEmployeeId.feature:30 - status code was: 201, expected: 400, response time: 1458, url: https://crudcrud.com/api/6dbb0510830348af9eb50f42b24e46a0/employees/, response: {"DateOfBirth":"199510-09","StartDate":"2023-09-21","Department":"DB","Email":"sri.valli@#%@%#$com","Address":"109 Centenaty St","FirstName":"","LastName":"123@23#$","_id":"66c1c13e6b920b03e879f597","JobTitle":"DBA Admin","Mobile":"ssj9701452923","BaseSalary":"aasa"}
+9 Centenaty St","BaseSalary":"aasa"},{"_id":"66c0a61d6b920b03e879f4a0","FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000},{"_id":"66c0a61e6b920b03e879f4a1","FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000},{"_id":"66c0a6206b920b03e879f4a2","FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000"},{"_id":"66c0a6216b920b03e879f4a3","FirstName":"","LastName":"","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":"aasa"},{"_id":"66c1402d6b920b03e879f4d0","FirstName":"Sai","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmail.com","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":50000},{"_id":"66c1402f6b920b03e879f4d1","FirstName":"Sri","LastName":"Valli","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@gmail.com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":55000},{"_id":"66c140306b920b03e879f4d2","FirstName":"ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit","LastName":"Prasad","DateOfBirth":"1992-09-21","StartDate":"2023-08-01","Department":"QA","JobTitle":"Quality Engineer","Email":"sai.prasad@gmailcom","Mobile":"+91 9030713451","Address":"43 Emert St","BaseSalary":"50000"},{"_id":"66c140316b920b03e879f4d3","FirstName":"","LastName":"","DateOfBirth":"1995-10-09","StartDate":"2023-09-21","Department":"DB","JobTitle":"DBA Admin","Email":"sri.valli@#%@%#$com","Mobile":"+91 9701452923","Address":"109 Centenaty St","BaseSalary":"aasa"}]
+
+10:28:34.666 [print] Employee Found: [
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c0783c6b920b03e879f3ea",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 centenaty St",
+    "FirstName": "sri",
+    "_id": "66c0783d6b920b03e879f3eb",
+    "LastName": "valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "&&**$%^&&#",
+    "_id": "66c0783e6b920b03e879f3ec",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 centenaty St",
+    "FirstName": "",
+    "_id": "66c078406b920b03e879f3ed",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c079596b920b03e879f3f2",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 centenaty St",
+    "FirstName": "sri",
+    "_id": "66c0795b6b920b03e879f3f3",
+    "LastName": "valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "&&**$%^&&#",
+    "_id": "66c0795c6b920b03e879f3f4",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 centenaty St",
+    "FirstName": "",
+    "_id": "66c0795d6b920b03e879f3f5",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c07a666b920b03e879f3f6",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 centenaty St",
+    "FirstName": "sri",
+    "_id": "66c07a686b920b03e879f3f7",
+    "LastName": "valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "&&**$%^&&#",
+    "_id": "66c07a696b920b03e879f3f8",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 centenaty St",
+    "FirstName": "",
+    "_id": "66c07a6a6b920b03e879f3f9",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c07af46b920b03e879f3fa",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 centenaty St",
+    "FirstName": "sri",
+    "_id": "66c07af56b920b03e879f3fb",
+    "LastName": "valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "&&**$%^&&#",
+    "_id": "66c07af66b920b03e879f3fc",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 centenaty St",
+    "FirstName": "",
+    "_id": "66c07af86b920b03e879f3fd",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c07f306b920b03e879f3fe",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c07f316b920b03e879f3ff",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c07f326b920b03e879f400",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c07f336b920b03e879f401",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "_id": "66c081da6b920b03e879f402",
+    "UpdatedFirstName": "Kumar"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c081db6b920b03e879f403",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c081dc6b920b03e879f404",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c081dd6b920b03e879f405",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c083916b920b03e879f406",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c083936b920b03e879f407",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c083946b920b03e879f408",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c083956b920b03e879f409",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c0847c6b920b03e879f40d",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c0847e6b920b03e879f40e",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c0847f6b920b03e879f40f",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c084806b920b03e879f410",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c085fd6b920b03e879f415",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c085fe6b920b03e879f416",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c086006b920b03e879f417",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c086016b920b03e879f418",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c086696b920b03e879f435",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c0866a6b920b03e879f436",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c0866b6b920b03e879f437",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c0866c6b920b03e879f438",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c088f96b920b03e879f449",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c088fb6b920b03e879f44a",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c088fc6b920b03e879f44b",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c088fd6b920b03e879f44c",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c089a56b920b03e879f44f",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c089a66b920b03e879f450",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c089a76b920b03e879f451",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c089a96b920b03e879f452",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c08a776b920b03e879f455",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c08a786b920b03e879f456",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c08a796b920b03e879f457",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c08a7b6b920b03e879f458",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c08b3f6b920b03e879f45f",
+    "LastName": "prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 centenaty St",
+    "FirstName": "sri",
+    "_id": "66c08b456b920b03e879f461",
+    "LastName": "valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c08e336b920b03e879f46b",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c08e346b920b03e879f46c",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c08e356b920b03e879f46d",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c08e366b920b03e879f46e",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c0a61d6b920b03e879f4a0",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c0a61e6b920b03e879f4a1",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c0a6206b920b03e879f4a2",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c0a6216b920b03e879f4a3",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmail.com",
+    "Address": "43 Emert St",
+    "FirstName": "Sai",
+    "_id": "66c1402d6b920b03e879f4d0",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": 50000
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@gmail.com",
+    "Address": "109 Centenaty St",
+    "FirstName": "Sri",
+    "_id": "66c1402f6b920b03e879f4d1",
+    "LastName": "Valli",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": 55000
+  },
+  {
+    "DateOfBirth": "1992-09-21",
+    "StartDate": "2023-08-01",
+    "Department": "QA",
+    "Email": "sai.prasad@gmailcom",
+    "Address": "43 Emert St",
+    "FirstName": "ThisIsAnIncrediblyLongUsernameThatExceedsTheCharacterLimit",
+    "_id": "66c140306b920b03e879f4d2",
+    "LastName": "Prasad",
+    "JobTitle": "Quality Engineer",
+    "Mobile": "+91 9030713451",
+    "BaseSalary": "50000"
+  },
+  {
+    "DateOfBirth": "1995-10-09",
+    "StartDate": "2023-09-21",
+    "Department": "DB",
+    "Email": "sri.valli@#%@%#$com",
+    "Address": "109 Centenaty St",
+    "FirstName": "",
+    "_id": "66c140316b920b03e879f4d3",
+    "LastName": "",
+    "JobTitle": "DBA Admin",
+    "Mobile": "+91 9701452923",
+    "BaseSalary": "aasa"
+  }
+]
+
+10:28:34.667 [print] Created Employee ID: 
+10:28:34.694 request:
+1 > PUT https://crudcrud.com/api/06e24e2d68ae40e29d85120c724d4971/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 171
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"UpdatedFirstName":"Kumar","UpdatedLastName":"Varanasi","UpdatedJobTitle":"Senior Quality Engineer","UpdatedEmail":"kumar.varanasi@example.com","UpdatedBaseSalary":60000}
+
+10:28:35.714 response time in milliseconds: 1019.87
+1 < 405
+1 < Allow: GET, POST
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 18 Aug 2024 00:28:35 GMT
+1 < Server: nginx/1.14.2
+
+10:28:35.716 status code was: 405, expected: 200, response time: 1020, url: https://crudcrud.com/api/06e24e2d68ae40e29d85120c724d4971/employees/, response: 
+10:28:35.753 request:
+1 > DELETE https://crudcrud.com/api/06e24e2d68ae40e29d85120c724d4971/employees/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: crudcrud.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+10:28:36.785 response time in milliseconds: 1031.61
+1 < 405
+1 < Allow: GET, POST
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 18 Aug 2024 00:28:36 GMT
+1 < Server: nginx/1.14.2
+
+10:28:36.786 status code was: 405, expected: 204, response time: 1032, url: https://crudcrud.com/api/06e24e2d68ae40e29d85120c724d4971/employees/, response: 

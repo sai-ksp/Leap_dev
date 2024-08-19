@@ -37,12 +37,6 @@ Scenario Outline: Create a new employee - Invalid Data
 * if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL')
 * if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data')
 
-
-  # Conditional logic to handle unexpected status codes
-  # if (statusCode == 201) karate.log('BUG: The API accepted invalid data and returned 201 Created, which is incorrect behavior.');
-  # if (statusCode == 404) karate.log('Invalid data: Resource not found, check the employee ID or URL');
-  # if (statusCode == 400) karate.log('Expected failure: Bad Request due to invalid data');
-
 Examples:
   | employee           |
   | data.invalidData[0]  |

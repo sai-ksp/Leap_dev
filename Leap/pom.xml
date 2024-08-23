@@ -15,12 +15,31 @@
   <url>https://www.example.com</url>
 
   <properties>
+  <antlr.version>4.13.1</antlr.version>
+        <graal.version>24.0.0</graal.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
 
   <dependencies>
+  <dependency>
+    <groupId>io.karatelabs</groupId>
+    <artifactId>karate-core</artifactId>
+    <version>1.5.0</version>
+</dependency>
+
+        <dependency>
+            <groupId>org.graalvm.js</groupId>
+            <artifactId>js-scriptengine</artifactId>
+            <version>${graal.version}</version>
+        </dependency>        
+        <dependency>
+            <groupId>org.graalvm.js</groupId>
+            <artifactId>js-language</artifactId>
+            <version>${graal.version}</version>
+            <scope>runtime</scope>
+        </dependency> 
        <!--  Karate Core  -->
 <dependency>
 <groupId>com.intuit.karate</groupId>
